@@ -18,23 +18,25 @@ public:
     int rollnumber;
     std::string color;
     Player owner;
+    std::string name;
 };
 
 void initializeproperties() {
-    Properties MedAvenue;
-    MedAvenue.bIsStation = false;
-    MedAvenue.bisUtility = false;
-    MedAvenue.color = "brown";
-    MedAvenue.houses = 0;
-    MedAvenue.price = 60;
-    MedAvenue.rollnumber = 1;
-    Properties BaltAvenue;
-    BaltAvenue.bIsStation = false;
-    BaltAvenue.bisUtility = false;
-    BaltAvenue.color = "brown";
-    BaltAvenue.houses = 0;
-    BaltAvenue.price = 60;
-    BaltAvenue.rollnumber = 3;
+    Properties* Prop = new Properties[28];
+    Prop[1].name = "MedAvenue";
+    Prop[1].bIsStation = false;
+    Prop[1].bisUtility = false;
+    Prop[1].color = "brown";
+    Prop[1].houses = 0;
+    Prop[1].price = 60;
+    Prop[1].rollnumber = 1;
+    Prop[2].name = "BaltAvenue";
+    Prop[2].bIsStation = false;
+    Prop[2].bisUtility = false;
+    Prop[2].color = "brown";
+    Prop[2].houses = 0;
+    Prop[2].price = 60;
+    Prop[2].rollnumber = 3;
 }
 
 
