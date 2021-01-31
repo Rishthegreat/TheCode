@@ -1,37 +1,23 @@
 #include <iostream>
 
-int main()
-{
-    initializeproperties();
-    int numplayers;
-    std::cout << "How many players: "; 
-    std::cin >> numplayers;
-    Player* playerarr = new Player[numplayers];
-    for (int i = 0; i < numplayers; i++) {
-        playerarr[i].Money = 1500;
-        playerarr[i].bInJail = false;
-        playerarr[i].currsquare = 0;
-    }
-}
-
 class Player {
-    public:
-        int Money;
-        bool bInJail;
-        int currsquare;
+public:
+    int Money;
+    bool bInJail;
+    int currsquare;
 
 };
 
 class Properties {
-    public:
-        int price;
-        int houses;
-        int rent;
-        bool bIsStation;
-        bool bisUtility;
-        int rollnumber;
-        std::string color;
-        Player owner;
+public:
+    int price;
+    int houses;
+    int rent;
+    bool bIsStation;
+    bool bisUtility;
+    int rollnumber;
+    std::string color;
+    Player owner;
 };
 
 void initializeproperties() {
@@ -50,3 +36,21 @@ void initializeproperties() {
     BaltAvenue.price = 60;
     BaltAvenue.rollnumber = 3;
 }
+
+
+int main()
+{
+    initializeproperties();
+    int numplayers;
+    std::cout << "How many players: "; 
+    std::cin >> numplayers;
+    Player* playerarr = new Player[numplayers];
+    for (int i = 0; i < numplayers; i++) {
+        playerarr[i].Money = 1500;
+        playerarr[i].bInJail = false;
+        playerarr[i].currsquare = 0;
+    }
+}
+
+
+
